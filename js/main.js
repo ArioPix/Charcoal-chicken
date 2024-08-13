@@ -34,10 +34,7 @@ var positions = [
    
     
   ];
-// pano1.setLinkingImage("./download.png", 400)
-// pano2.setLinkingImage("./download.png", 400)
-// pano3.setLinkingImage("./download.png", 400)
-// pano4.setLinkingImage("./download.png", 400)
+
 const viewer = new PANOLENS.Viewer({
 
   container: imageContainer,
@@ -47,7 +44,7 @@ const viewer = new PANOLENS.Viewer({
 
    controlButtons: ['fullscreen','setting','video'],            // Buttons array in the control bar. Default to ['fullscreen', 'setting', 'video']
    //autoHideControlBar: false,        // Auto hide control bar
-  // autoHideInfospot: true,            // Auto hide infospots
+  autoHideInfospot: false,            // Auto hide infospots
    //horizontalView: true,            // Allow only horizontal camera control
    cameraFov: 90,                // Camera field of view in degree
   // reverseDragging: false,            // Reverse orbit control direction
